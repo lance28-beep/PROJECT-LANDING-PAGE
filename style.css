@@ -1,0 +1,217 @@
+:root {
+  /* colors and font styles */
+  /* dark background color (hero and footer) */
+  --blue: #1f2937;
+  --white: #ffffff;
+  /* hero main text */
+  --heroSize: 48px;
+  --heroWeight: bolder;
+  --heroColor: #f9faf8;
+  /* header logo text */
+  --herosecondaryText: 18px;
+  --herosecondaryColor: #e5e7eb;
+  /* button color, call to action background-color */
+  --buttoncolor: #3882f6;
+  --informationSize: 36px;
+  --informationWeight: bolder;
+  --informationColor: #1f2937;
+  /* Quote section background color */
+  --quoteBgColor: #e5e7eb;
+  --quoteText: 36px;
+  --quotedWeight: lighter;
+  --quoteStyle: italic;
+  --quoteColor: #1f2937;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+body .header {
+  background-color: var(--blue);
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--heroColor);
+}
+
+.navLinks a {
+  font-size: 18px;
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  height: 60vh;
+  background-color: var(--blue);
+}
+
+.container {
+  width: 48%;
+  height: 200px;
+}
+
+.left h1 {
+  font-size: var(--heroSize);
+  font-weight: var(--heroWeight);
+  color: var(--heroColor);
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: var(--herosecondaryText);
+  color: var(--herosecondaryColor);
+  font-weight: var(--herosecondaryWeight);
+}
+
+button {
+  background-color: var(--buttoncolor);
+  border: 1px solid var(--heroColor);
+  color: var(--white);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 150px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  font-family: arial;
+}
+
+/* content */
+.content {
+  max-width: 1200px;
+  margin: 50px auto;
+  height: 30vh;
+}
+
+.container-subtext {
+  display: flex;
+  justify-content: space-around;
+}
+.content h2 {
+  color: var(--informationColor);
+  text-align: center;
+  margin: 40px auto;
+}
+
+.box {
+  height: 100px;
+  border: #3882f6 solid 1px;
+  width: 100px;
+}
+.containerSub {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 180px;
+}
+
+.containerSub p {
+  text-align: center;
+  font-weight: lighter;
+  color: var(--informationColor);
+  margin-top: 10px;
+}
+
+.content h2 {
+  font-size: var(--informationSize);
+  font-weight: var(--informationWeight);
+  color: var(--informationColor);
+}
+
+.quotes-container {
+  width: 100%;
+  height: 30vh;
+  background-color: var(--quoteBgColor);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quotes-container div {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem;
+}
+
+.quotes-container h3 {
+  font-size: var(--quoteText);
+  font-weight: var(--quotedWeight);
+  color: var(--quoteColor);
+  font-style: var(--quoteStyle);
+}
+
+.quotes-container p {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--quoteColor);
+  font-style: var(--quoteStyle);
+  align-self: flex-end;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 20vh;
+  background-color: var(--buttoncolor);
+  margin: 5rem auto;
+  border-radius: 10px;
+}
+
+.action h2 {
+  color: var(--heroColor);
+  margin-bottom: 10px;
+}
+
+.action p {
+  color: var(--white);
+}
+
+.footer {
+  background-color: var(--blue);
+  align-items: center;
+  max-width: 100%;
+  padding: 35px;
+  text-align: center;
+  color: var(--white);
+}
